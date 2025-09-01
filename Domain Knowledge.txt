@@ -1,0 +1,141 @@
+Expanded Domain Knowledge Text
+
+(Knowledge Base for RAG-based Place Inference)
+
+1. Introduction
+
+For robots to collaborate naturally with humans in residential or office environments, it is essential to understand the relationship between places and objects. Specific places repeatedly contain characteristic objects, and such object patterns serve as strong cues for identifying spaces. This document organizes domain knowledge of household and office environments, mapping detailed places to object sets, for use in RAG-based semantic place inference.
+
+2. Residential Environment (Home)
+2.1 Living Room
+
+Key Objects: sofa, television, remote control, speaker, coffee table, rug, cabinet, picture frame, air purifier.
+
+Characteristics: A shared space for family and guests, combining furniture for relaxation and entertainment electronics.
+
+Reference: The co-occurrence of a sofa and a TV strongly indicates a living room 【Rusu et al., 2008】.
+
+2.2 Kitchen
+
+Key Objects: refrigerator, sink, microwave, stove, oven, hood, countertop, frying pan, knife, dishes, dishwasher.
+
+Characteristics: A space characterized by the combination of cooking appliances and storage devices. Trash bins for food waste may also serve as cues.
+
+Reference: Kitchens are defined by the “cooking equipment + storage appliances” pattern 【Kranz et al., 2010】.
+
+2.3 Bedroom
+
+Key Objects: bed, pillow, blanket, wardrobe/closet, nightstand, bedside lamp, alarm clock.
+
+Characteristics: Focused on sleep-related furniture, with personal clothing and bedding as mandatory elements.
+
+Reference: Bedrooms consistently feature both beds and wardrobes 【Lee & Lee, 2017】.
+
+2.4 Bathroom
+
+Key Objects: toilet, sink, bathtub, shower, towel rack, mirror, toiletries.
+
+Characteristics: Concentration of sanitary fixtures (toilet, sink, shower).
+
+Reference: The presence of multiple sanitary fixtures together uniquely identifies a bathroom 【Chen et al., 2015】.
+
+2.5 Dining Room
+
+Key Objects: dining table, multi-seat chairs, tableware (plates, forks, knives).
+
+Characteristics: Presence of a large table with chairs; usually adjacent to kitchens.
+
+Reference: Dining rooms are defined as spaces with communal dining tables 【Ray, 2016】.
+
+2.6 Study / Home Office
+
+Key Objects: desk, bookshelf, computer, laptop, keyboard, mouse, printer.
+
+Characteristics: A focused workspace, characterized by the combination of electronics and bookshelves.
+
+Reference: Studies are identified by the “desk + electronics” pattern 【Bellotto, 2017】.
+
+2.7 Entrance / Hallway
+
+Key Objects: shoes, shoe rack, umbrella, coat hanger, mirror.
+
+Characteristics: Transitional space connecting outside and inside; shoe storage is the critical cue.
+
+Reference: Housing studies in Korea define entrances primarily by footwear storage 【Kim et al., 2018】.
+
+2.8 Laundry Room
+
+Key Objects: washing machine, dryer, detergent, laundry basket.
+
+Characteristics: Dedicated laundry appliances always exist in this space.
+
+Reference: Washing machine + dryer combination is the laundry room signature 【Tapia et al., 2004】.
+
+2.9 Utility Room
+
+Key Objects: vacuum cleaner, mop, broom, storage shelves.
+
+Characteristics: Secondary storage/organization area, often with cleaning tools.
+
+Reference: Utility rooms are classified in robotics research as “auxiliary storage for cleaning equipment” 【Rabaey et al., 2011】.
+
+3. Office Environment (Workplace)
+3.1 Lobby / Reception
+
+Key Objects: reception desk, sofa, visitor chairs, company logo, decorative plants.
+
+Characteristics: Space for greeting visitors; defined by desk + seating.
+
+Reference: Office research highlights reception as “greeting/waiting furniture pattern” 【Ray, 2016】.
+
+3.2 Open Office
+
+Key Objects: multiple desks, office chairs, PCs/monitors, telephones, partitions.
+
+Characteristics: Shared work area; repeated desk + chair units are the main cue.
+
+Reference: Modern office studies define open spaces by the repetition of desk-partition patterns 【Bellotto, 2017】.
+
+3.3 Private Office
+
+Key Objects: desk, meeting chairs, computer, bookshelf, file cabinet.
+
+Characteristics: Individual manager workspace, combining desk + cabinet.
+
+3.4 Meeting Room
+
+Key Objects: large table, conference chairs, projector/screen, whiteboard.
+
+Characteristics: Collaboration space; large central table is the most distinctive feature.
+
+Reference: Meeting rooms are defined by “large conference table at the center” 【Lee & Lee, 2017】.
+
+3.5 Break Room
+
+Key Objects: table, chairs, vending machine, refrigerator, microwave, coffee machine.
+
+Characteristics: Employee rest/snack area; presence of simple kitchen appliances.
+
+3.6 Corridor
+
+Key Objects: carpet, doors, signage, CCTV.
+
+Characteristics: Transit pathway; furniture is minimal.
+
+3.7 Server Room
+
+Key Objects: server racks, cables, cooling systems, UPS units.
+
+Characteristics: IT infrastructure space; defined by rack/cable patterns.
+
+3.8 Print/Copy Room
+
+Key Objects: multifunction printer, copier, paper stacks, document trays.
+
+Characteristics: Dedicated to printing and document handling.
+
+3.9 Storage Room
+
+Key Objects: boxes, storage shelves, inventory items.
+
+Characteristics: Space for storing office supplies and stock.
